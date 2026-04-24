@@ -1131,6 +1131,8 @@ cd /app/opencex
 docker compose up -d
 
 docker stop opencex-cel opencex-wss
+sleep 20;
+docker restart opencex
 sleep 5;
 docker exec -it opencex python ./manage.py migrate
 docker exec -it opencex python ./manage.py collectstatic
