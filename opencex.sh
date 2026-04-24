@@ -1058,7 +1058,7 @@ services:
      image: postgres:latest
      shm_size: 1g
      volumes:
-        - ./postgresql_data:/var/lib/postgresql/data
+        - ./postgresql_data:/var/lib/postgresql
      environment:
        POSTGRES_USER: "$DB_USER"
        POSTGRES_PASSWORD: "$DB_PASS"
